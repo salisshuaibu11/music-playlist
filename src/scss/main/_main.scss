@@ -1,0 +1,152 @@
+.main {
+  width: 100%;
+  grid-column: 3 / -1;
+  display: flex;
+  flex-direction: column;
+  &__cards {
+    @include cards;
+    height: 10rem;
+    display: flex;
+
+    &--card {
+      position: relative;
+      flex-basis: 50%;
+      background-image: url(../images/design/heading.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      border: 1px solid #333;
+    }
+  }
+
+  &__cards--card--title {
+    position: absolute;
+    top: 100px;
+    left: 20px;
+  }
+
+  &__singles {
+    @include cards;
+    height: 12rem;
+    margin-top: 2rem;
+
+    &__icons {
+      position: absolute;
+      bottom: 13.8rem;
+      left: 285px;
+      z-index: 10;
+
+      &--heart::before {
+      }
+
+      &--play::before {
+      }
+
+      &--dots::before {
+      }
+    }
+
+    &__cards {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &--title {
+      display: block;
+      margin-bottom: 20px;
+      font-size: 1.5rem;
+    }
+
+    &--artist {
+
+    }
+
+    &__img {
+      background: #fff;
+      display: block;
+      width: 7rem;
+      height: 5.5rem;
+      margin-bottom: 10px;
+      box-shadow: 2px 6px 2px rgba(0, 0, 0, 1.6);
+    }
+
+    &__card {
+      cursor: pointer;
+      text-align: center;
+      &:not(:last-child) {
+        margin-right: 20px;
+      }
+
+      &--1 img {
+        background-image: url(../images/design/vicky.jpg);
+        @include image;
+      }
+
+      &--2 img {
+        background-image: url(../images/design/vicky.jpg);
+        @include image;
+      }
+
+      &--3 img {
+        background-image: url(../images/design/vicky.jpg);
+        @include image;
+      }
+
+      &--4 img {
+        background-image: url(../images/design/vicky.jpg);
+        @include image;
+      }
+
+      &--5 img {
+        background-image: url(../images/design/vicky.jpg);
+        @include image;
+      }
+
+      &--6 img {
+        background-image: url(../images/design/vicky.jpg);
+        @include image;
+      }
+
+      &--7 img {
+        background-image: url(../images/design/vicky.jpg);
+        @include image;
+      }
+
+      &--10 img {
+        background-image: url(../images/design/wizkid.jpg);
+        @include image;
+      }
+
+      &--11 img {
+        background-image: url(../images/design/wizkid.jpg);
+        @include image;
+      }
+
+      &--12 img {
+        background-image: url(../images/design/wizkid.jpg);
+        @include image;
+      }
+
+      &--13 img {
+        background-image: url(../images/design/wizkid.jpg);
+        @include image;
+      }
+
+      &--14 img {
+        background-image: url(../images/design/wizkid.jpg);
+        @include image;
+      }
+
+      &--15 img {
+        background-image: url(../images/design/wizkid.jpg);
+        @include image;
+      }
+
+      &--16 img {
+        background-image: url(../images/design/wizkid.jpg);
+        @include image;
+      }
+
+    }
+
+  }
+}

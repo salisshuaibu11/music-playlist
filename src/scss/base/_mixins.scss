@@ -13,6 +13,19 @@
   }
 }
 
+@mixin cards {
+  width: 75vw;
+  margin-top: 0;
+  margin-left: 45px;
+  max-width: 100%;
+}
+
+@mixin image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
 // Media queries
 @mixin bp($point) {
   @if $point == large {
