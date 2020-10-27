@@ -2,16 +2,33 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Athlon / Front-end Boilerplate Template</title>
+    <title>Music Player</title>
   </head>
   <body>
-    <header>
-      Hello, world!
-      <img src="images/content/logoa.svg" alt="Logo of Athlon" class="logo">
-    </header>
-    <main>
-      <p>Demo page illustrating building SASS, JS, Fonts, Background Images and Inline Images.</p>
-      <address>Documentation avaialable on the official <a href="https://github.com/WeAreAthlon/frontend-webpack-boilerplate/" target="_blank">GitHub Repository</a>.</address>
-    </main>
+    <div class="container">
+      <header class="header">
+        <input type="text" class="header__search" placeholder="Search...">
+
+        <div class="header__auth">
+          <button class="header__auth--register" type="button">Register</button>
+          <button class="header__auth--login" type="button">Login</button>
+        </div>
+      </header>
+      <div class="sidebar">
+        <span class="sidebar__logo">Logo</span>
+        <button type="button" class="sidebar__btn">
+          Feed
+        </button>
+        <ul class="sidebar__lists">
+          <li class="sidebar__list sidebar__list--1"><a class="sidebar__link sidebar__link--active" href="#">Home</a></li>
+          <li class="sidebar__list sidebar__list--2"><a class="sidebar__link" href="#">Playlists</a></li>
+          <li class="sidebar__list sidebar__list--3"><a class="sidebar__link" href="#">Albums</a></li>
+          <li class="sidebar__list sidebar__list--4"><a class="sidebar__link" href="#">Artists</a></li>
+          <li class="sidebar__list sidebar__list--5"><a class="sidebar__link" href="#">Trending</a></li>
+        </ul>
+
+      </div>
+      <main class="main">Main</main>
+    </div>
   </body>
 </html>

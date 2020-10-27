@@ -1,0 +1,76 @@
+.sidebar {
+  height: 100vh;
+  grid-column: 1 / 3;
+  grid-row: 1 / 4;
+  background: #000;
+  display: flex;
+  flex-direction: column;
+
+  &__logo {
+    display: block;
+    margin: 20px 0;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  &__btn {
+    background: #ccc;
+    display: block;
+    margin: 40px auto;
+    width: 85%;
+    padding: 7px 0;
+    border: none;
+    border: 1px solid #ccc;
+    cursor: pointer;
+
+    &::before {
+      content: '\f0f3';
+      padding-right: 10px;
+      font-family: 'FontAwesome';
+    }
+  }
+
+  &__lists {
+    margin-left: 20px;
+  }
+
+  &__list {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+
+    &--1 a::before{
+      content: "\f015";
+    }
+
+    &--2 a::before{
+      content: '\f144';
+    }
+
+    &--3 a::before{
+      content: '\f51f';
+    }
+
+    &--4 a::before {
+      content: '\f007';
+    }
+
+    &--5 a::before {
+      content: '\f201';
+    }
+  }
+
+  &__link {
+    color: #fff;
+
+    &::before{
+      padding-right: 10px;
+      font-family: 'FontAwesome';
+    }
+
+    &--active {
+      color: #3a9dbe;
+    }
+
+  }
+}

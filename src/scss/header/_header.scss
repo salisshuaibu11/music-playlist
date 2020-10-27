@@ -1,0 +1,47 @@
+.header {
+  grid-column: 3 / -1;
+  background: inherit;
+  height: 60%;
+  border-bottom: 1px solid #fff;
+  padding: 0 30px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__search {
+    width: 33%;
+    border: none;
+    border: 2px solid #fff;
+    background-color: inherit;
+    border-radius: 5px;
+    padding: 7px 0;
+
+    &::placeholder {
+      font-weight: bold;
+      text-align: center;
+    }
+
+    &:focus {
+      color: #fff;
+    }
+  }
+
+  &__auth button {
+    border: none;
+    border: 1px solid blue;
+    background: none;
+    cursor: pointer;
+    padding: 6px 15px;
+  }
+
+  &__auth--register {
+    color: #6fbbd3;
+  }
+
+  &__auth--login {
+    background: #6fbbd3;
+    color: #fff;
+  }
+
+}
